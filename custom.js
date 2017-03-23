@@ -13,7 +13,7 @@ xhr.onload = function () {
 			newContent += 'alt="' + responseObject.artists[i].title + '">'
 			newContent += '<p><strong>' + responseObject.artists[i].title + '</strong><br>'
 			newContent += responseObject.artists[i].name + '<br><em>'
-			newContent += responseObject.artists[i].block + '</em><br><span>'
+			// newContent += responseObject.artists[i].block + '</em><br><span>'
 			newContent += responseObject.artists[i].medium + '</span></p>'
 			newContent += '</div>'
 		}
