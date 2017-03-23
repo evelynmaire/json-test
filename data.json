@@ -2,19 +2,19 @@
 	"artists": [{
 		"name": "Anna Steinbauer",
 		"title": "Anointer of Champions",
-		"block": "Magic: Origins",
+		// "block": "Magic: Origins",
 		"medium": "Digital, 2015",
 		"work": "images/anointer_of_champions.jpg"
 	}, {
 		"name": "Clint Cearley",
 		"title": "Mistfire Adept",
-		"block": "Kahns of Tarkir",
+		// "block": "Kahns of Tarkir",
 		"medium": "Digital, 2015",
 		"work": "images/mistfire_adept.jpg"
 	}, {
 		"name": "Sam Burley",
 		"title": "Heliod's Emissary",
-		"block": "Theros",
+		// "block": "Theros",
 		"medium": "Digital, 2013",
 		"work": "images/heliods_emissary.jpg"
 	}]
