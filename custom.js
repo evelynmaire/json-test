@@ -1,6 +1,7 @@
 var xhr = new XMLHttpRequest(); // create XmlHttpRequest object
 var button
 
+
 xhr.onload = function () {
 	if (xhr.status === 200) { // if server is okay
 		responseObject = JSON.parse(xhr.responseText)
@@ -13,7 +14,6 @@ xhr.onload = function () {
 			newContent += 'alt="' + responseObject.artists[i].title + '">'
 			newContent += '<p><strong>' + responseObject.artists[i].title + '</strong><br>'
 			newContent += responseObject.artists[i].name + '<br><em>'
-			// newContent += responseObject.artists[i].block + '</em><br><span>'
 			newContent += responseObject.artists[i].medium + '</span></p>'
 			newContent += '</div>'
 		}
@@ -22,9 +22,14 @@ xhr.onload = function () {
 	}
 }
 
-button = document.querySelector('.show')
 
-button.addEventListener('click', function () {
+
+
 	xhr.open('GET', 'data.json') // prep request
+	xhr.send() // send request
+
+button = document.querySelector('.show')
+button.addEventListener('click', function () {
+	xhr.open('GET', 'data-2.json') // prep request
 	xhr.send() // send request
 })
